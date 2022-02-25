@@ -21,9 +21,9 @@ spec:
         imagePullPolicy: Always
         env:
         - name: TZ
-          value: Europe/Stockholm
+          value: America/Chicago
         - name: GITLAB_TIMEZONE
-          value: Stockholm
+          value: CST 
         - name: DEBUG
           value: "false"
 
@@ -129,4 +129,5 @@ spec:
           timeoutSeconds: 1
       volumes:
       - name: data
-        emptyDir: {}
+        persistentVolumeClaim:
+          claim: gitlab-pv-claim
