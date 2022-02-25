@@ -39,4 +39,4 @@ spec:
       volumes:
       - name: data
         persistentVolumeClaim:
-          claim: redis-pv-claim
+          claimName: redis-pv-claim

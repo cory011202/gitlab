@@ -23,7 +23,7 @@ spec:
         - name: TZ
           value: America/Chicago
         - name: GITLAB_TIMEZONE
-          value: CST 
+          value: Stockholm
         - name: DEBUG
           value: "false"
 
@@ -130,4 +130,4 @@ spec:
       volumes:
       - name: data
         persistentVolumeClaim:
-          claim: gitlab-pv-claim
+          claimName: gitlab-pv-claim

@@ -55,4 +55,4 @@ spec:
       volumes:
       - name: data
         persistentVolumeClaim:
-          claim: gitlab-pv-claim
+          claimName: gitlab-pv-claim
